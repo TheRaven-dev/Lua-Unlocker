@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Lua_Unlocker</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="fasmdll_managed">
+      <HintPath>..\..\GreyMagic\GreyMagic\bin\Debug\fasmdll_managed.dll</HintPath>
+    </Reference>
+    <Reference Include="GreyMagic">
+      <HintPath>..\..\GreyMagic\GreyMagic\bin\Debug\GreyMagic.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
